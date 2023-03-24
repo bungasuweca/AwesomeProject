@@ -1,5 +1,5 @@
 import {Text} from '@rneui/base';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, Text, Pressable} from 'react-native';
 
 function TaskItem(props) {
   return (
