@@ -1,16 +1,15 @@
-import {useState} from 'react';
+import {Text} from '@rneui/base';
 import {StyleSheet, View} from 'react-native';
 
-function TaskItem() {
+function TaskItem(props) {
   return (
-    <View style={styles.tasks}>
-      {MyTask && MyTask.map(task => <Text key={task}>{task}</Text>)}
+    <View style={styles.TaskItem}>
+      <Text style={styles.TaskText}>{props.text}</Text>
     </View>
   );
 }
 
 export default TaskItem;
-const [MyTask, setMyTask] = useState('');
 
 const styles = StyleSheet.create({
   tasks: {

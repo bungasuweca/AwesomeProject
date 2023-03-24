@@ -20,6 +20,7 @@ function TaskInput(props) {
         style={styles.txtInput}
         placeholder="What's Today's Task?"
         onChangeText={inputTaskHandler}
+        value={enteredTaskText}
       />
       <Button
         style={styles.btn}
